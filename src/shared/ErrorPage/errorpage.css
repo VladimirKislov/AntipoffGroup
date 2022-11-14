@@ -1,0 +1,55 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 100px 30px;
+    border-radius: 20px;
+    background-color: var(--violet);
+}
+
+.title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--red);
+}
+
+.btn {
+    padding: 16px 24px;
+    border: 1px solid var(--blue);
+    border-radius: 7px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+@media(max-width: 520px) {
+    .title {
+        font-size: 22px;
+    }
+}

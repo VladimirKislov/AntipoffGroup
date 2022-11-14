@@ -1,0 +1,146 @@
+.wrapper {
+    position: absolute;
+    top: 253px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.label {
+    margin-bottom: 8px;
+}
+
+.labelWrapperPass,
+.labelWrapper {
+    position: relative;
+}
+
+.labelWrapperPass,
+.labelName {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.labelEmail {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inputPasswordMsg,
+.inputName,
+.inputEmail {
+    width: 100%;
+    max-width: 468px;
+    padding: 15px 8px 15px 16px;
+    border: 1px solid var(--grayF8);
+    border-radius: 8px;
+    background-color: var(--grayF8);
+}
+
+
+.inputEmail::placeholder,
+.input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray);
+}
+
+.inputPassword {
+    width: 100%;
+    max-width: 468px;
+    margin-bottom: 24px;
+    padding: 15px 8px 15px 16px;
+    border: 1px solid var(--grayF8);
+    border-radius: 8px;
+    background-color: var(--grayF8);
+}
+
+.button {
+    width: 100%;
+    max-width: 468px;
+    height: 48px;
+    padding: 8px 12px;
+    border: 1px solid var(--violet);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background: var(--violet);
+    color: var(--white);
+}
+
+
+.errPasswordMsg,
+.errEmail,
+.errName {
+    position: absolute;
+    bottom: -15px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--red);
+}
+
+.errPassword {
+    position: absolute;
+    bottom: 6px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--red);
+}
+
+.activeErrPasswordMsg,
+.activeErrName,
+.activeErrEmail {
+    width: 100%;
+    max-width: 468px;
+    padding: 15px 8px 15px 16px;
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    background-color: var(--grayF8);
+    outline: 1px solid transparent;
+}
+
+.activeErrPassword {
+    width: 100%;
+    max-width: 468px;
+    margin-bottom: 24px;
+    padding: 15px 8px 15px 16px;
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    background-color: var(--grayF8);
+    outline: 1px solid transparent;
+}
+
+@media(max-width: 650px) {
+    .wrapper {
+        top: 63px;
+        padding: 0;
+    }
+
+    .inputPasswordMsg,
+    .inputName,
+    .inputEmail {
+        padding: 16px 8px 15px 16px;
+    }
+}

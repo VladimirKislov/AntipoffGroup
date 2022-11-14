@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    padding: 49px 188px;
+}
+
+.description {
+    width: 100%;
+    max-width: 630px;
+    margin-right: 129px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoWrapperPhone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.infoWrapperEmail {
+    display: flex;
+    align-items: center;
+}
+
+.phone,
+.email {
+    padding-left: 8px;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width: 790px) {
+    .container {
+        padding: 32px 16px;
+    }
+}

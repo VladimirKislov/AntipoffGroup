@@ -1,0 +1,182 @@
+.containerTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 265px;
+    background-color: var(--violet);
+}
+
+.containerUser {
+    display: flex;
+    width: 100%;
+    height: 265px;
+    padding: 39px 188px;
+    background-color: var(--violet);
+}
+
+.contentUser {
+    display: flex;
+}
+
+.avatarUser {
+    width: 187px;
+    height: 187px;
+    margin-right: 32px;
+    border-radius: 100px;
+}
+
+.descContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fullNameUser {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--white);
+}
+
+.infoUser {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--white);
+}
+
+.btnPrev,
+.btnNext {
+    position: absolute;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--grayF8);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: transparent;
+    color: var(--grayF8);
+}
+
+.btnPrev {
+    top: 32px;
+    left: 80px;
+}
+
+.btnNext {
+    top: 33px;
+    right: 80px;
+}
+
+.contentTeam {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title1 {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--white);
+}
+
+.title2 {
+    width: 100%;
+    max-width: 846px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--grayF8);
+    text-align: center;
+}
+
+.btnBack,
+.btnExit {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    .containerTeam {
+        padding: 0 16px;
+    }
+}
+
+
+@media(max-width: 790px) {
+    .containerUser {
+        justify-content: center;
+        height: 100%;
+        padding: 64px 62px;
+        text-align: center;
+    }
+
+    .containerTeam {
+        height: 281px;
+    }
+
+    .contentUser {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .avatarUser {
+        margin: 0;
+    }
+
+    .descContainer {
+        margin-bottom: 17px;
+    }
+
+    .fullNameUser {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .infoWrapperPhone {
+        margin-bottom: 24px;
+    }
+
+    .infoUser {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .btnExit {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        display: block;
+    }
+
+    .btnBack {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        display: block;
+    }
+
+    .btnPrev,
+    .btnNext {
+        display: none;
+    }
+
+    .title1 {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .title2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
