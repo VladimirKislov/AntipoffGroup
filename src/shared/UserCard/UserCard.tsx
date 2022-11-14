@@ -1,5 +1,3 @@
-// import { getDownloadURL, listAll, ref, uploadBytes, uploadBytesResumable } from "firebase/storage";
-// import { storage } from "../../utils/firebase";
 import React, { useEffect, useState } from "react";
 import styles from "./usercard.css";
 import { useParams } from "react-router-dom";
@@ -15,38 +13,12 @@ export function UserCard() {
   const [user, setUser] = useState<any>([]);
   const [isLoad, setIsLoad] = useState(false);
 
-  // const [imageUpload, setImageUpload] = useState<any>(null);
-  // const [imageUrls, setImageUrls] = useState<any>([]);
-
   useEffect(() => {
     if (dataUsers.length > 0) {
       setUser(user.concat(dataUsers.find((item: any) => item.id === Number(userId))));
       setIsLoad(true);
     }
   }, [dataUsers]);
-
-  // const imagesListRef = ref(storage, "images/");
-
-  // const uploadFile = (e: any) => {
-  //   e.preventDefault();
-  //   if (imageUpload === null) return;
-  //   const imageRef = ref(storage, `images/${imageUpload.name}`);
-  //   uploadBytes(imageRef, imageUpload).then((snapshot) => {
-  //     getDownloadURL(snapshot.ref).then((url) => {
-  //       setImageUrls((prev: any) => [...prev, url]);
-  //     });
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   listAll(imagesListRef).then((response) => {
-  //     response.items.forEach((item) => {
-  //       getDownloadURL(item).then((url) => {
-  //         setImageUrls((prev: any) => [...prev, url]);
-  //       });
-  //     });
-  //   });
-  // }, []);
 
   return (
     <div className={styles.container}>
