@@ -9,7 +9,7 @@ export type RootState = {
 };
 
 const initialState: RootState = {
-  token: "HXmtcGfCxcZvh12xP", //
+  token: "",
   data: {
     loading: false,
     data: [],
